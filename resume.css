@@ -1,0 +1,48 @@
+﻿/* resume.css */
+
+body {
+    background-color: oldlace;
+    
+}
+body {
+    width: 52vw;
+    border: .52vw solid black;
+    padding: 3.25vw;
+    margin-top: 1.95vw;
+    margin-bottom: 1.95vw;
+    margin-right: 19.53vw;
+    margin-left: 19.53vw;
+}
+#image {
+    display: block;
+    margin-left: 39vw;
+    margin-right: 0px;
+    padding: 0.33vw;
+}
+p{
+    font-weight: normal;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: large;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: normal;
+}
+h3 {
+    font-size: medium;
+    font-weight: bold;
+}
+h4 {
+    font-weight: bold;
+}
+h5{
+    font-style: italic;
+}
+h6{
+    font-size: small;
+    font-weight: bold;
+}
+
