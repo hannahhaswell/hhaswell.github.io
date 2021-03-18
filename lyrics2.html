@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Lyrics to your Favorite Song!</title>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Find Lyrics to your Favorite Song!</h1>
+    <div class="search">
+        <input type="text" name="artist" placeholder="Enter artist" id="search-artist" />
+        <input type="text" name="title" placeholder="Enter song name" id="search-title" />
+        <button type="button" id="myButt" onclick="findLyrics()" value="search">search</button>
+        <div class="results" id="results"></div>
+    </div>
+    <script>
+        function findLyrics(){
+        var artist = document.getElementById('search-artist').value;
+        var title = document.getElementById('search-title').value;
+        $.getJSON("https://api.lyrics.ovh/v1/"+artist+"/"+title, function(result){
+        console.log(result);
+        var lyrics = result.lyrics;
+        var ptag = document.createElement('p');
+        ptag.innerHTML = lyrics;
+        document.getElementById('results').append(ptag);
+        });
+        };
+    </script>
+
+
+</body>
+</html>
